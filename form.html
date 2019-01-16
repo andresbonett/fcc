@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="SurveyForm.css">
+</head>
+<body>
+	<div id="main">
+		<div class="section1">
+			<h1 id="title">Contactame</h1> <!-- titulo formulario -->
+			<p id="description">PQR</p> <!-- descripcion form -->	
+		</div>
+		<div class="section2">
+			<form id="survey-form">
+				<!-- Nombre -->
+				<label id="name-label">Nombre:</label><input id="name" type="text" name="name" placeholder="tu nombre aqui" required>
+				<!-- E-mail -->
+				<label id="email-label">Email:</label><input id="email" type="email" name="email" placeholder="me@correo.com" required>
+				<!-- Numero tel -->
+				<label id="number-label">Tel:</label><input id="number" type="number" name="number" placeholder="# Tel" min="1000000" max="9999999999">
+				<!-- Lista desplegable -->
+				<select id="dropdown">
+					<optgroup label="Pais de Origen" title="hola" > <!-- titulo lista -->
+						<option>Colombia</option>
+						<option>Mexico</option>
+						<option>Estados Unidos</option>
+					</optgroup>
+				</select>
+				<br>
+				<!-- Cuadro  -->
+				<fieldset> 
+					<legend>Quieres Recibir Mensajes?</legend> 
+					<input id="feedbacksi" type="radio" name="msj" value="yes" checked>
+					<label for="feedbacksi">Si</label><br>
+					<input id="feedbackno" type="radio" name="msj" value="not">
+					<label for="feedbackno">No</label>
+				</fieldset>
+				<fieldset>
+					<legend>Que Tipo de Mensajes?</legend>
+					<label><input type="checkbox" name="personality" value="info" checked> Noticias</label>
+					<label><input type="checkbox" name="personality" value="noticias" checked> Actualizaciones</label>
+				</fieldset>
+				<br>
+				<textarea name="Comentarios" placeholder="Escribe tus Comentarios Aqui..." rows="5" cols="30" required></textarea>
+				<br>
+				<input id="submit" type="submit" name="submit" value="Enviar" accesskey="e">
+			</form>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>

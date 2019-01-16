@@ -1,0 +1,76 @@
+body {
+			background-image: url("clouds.jpg");
+			background-size:cover;
+			background-attachment: fixed;
+			font-family: Helvetica, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		h1 { text-align: center; text-transform: uppercase; }
+
+		/* Contenedor de Formulario */
+		#main {
+			margin: auto;
+			padding: 1em;
+			min-width: 40%;
+			background-color: #ffffff3d;
+			border-radius: 1em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.section1 {
+			padding-right: 1em;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			color:#1f10fb;
+		}
+
+		.section2 {
+			display: flex;
+			flex-direction: row;
+			background-color: #ffffff7a;
+			border-radius: .8em;
+			padding: 5px;
+			grid-template-columns: 5em 1fr;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			padding: .6em;
+		}
+		#name-label,
+		#email-label,
+		#number-label {
+			display: none;
+			position: absolute;
+		}
+
+		#name,
+		#email,
+		#number {
+			display: block;
+			color: black;
+			border-style: none;
+			padding: .5em;
+			margin-bottom: 1.5em;
+			border-radius: 3px;
+			border-bottom: 1px solid #00000063;
+			background-color: transparent;
+		}
+
+		@media (max-width: 600px){
+			#main {
+				display: block;
+				margin: 2em 1em;
+				width: 100%;
+			}
+			h1, p {margin: auto; padding-bottom: .3em;}
+			form {width: -webkit-fill-available; width: 100%;}
+		}
